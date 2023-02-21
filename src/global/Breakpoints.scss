@@ -1,0 +1,27 @@
+@mixin media-query-1400 {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+  @mixin media-query-1200 {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @mixin media-query-1270 {
+    @media (min-width: 1270px) {
+      @content;
+    }
+  }
+  @mixin media-query-1024 {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin media-query-768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+ 

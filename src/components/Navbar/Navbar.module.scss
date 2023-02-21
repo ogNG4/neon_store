@@ -1,0 +1,29 @@
+@import '../../global/Neons.scss';
+
+.header{
+    font-family: 'Sacramento';
+    width: 100%;
+    height: 5rem;
+    background: red;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background: $background-color;
+}
+
+.logo{
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.neon-logo{
+    color: $purple-text-color;
+    text-shadow: $header-purple-neon;
+}
+
+.neon-store{
+    color: $yellow-text-color;
+    text-shadow: $header-yellow-neon;
+}
+
+
