@@ -1,0 +1,23 @@
+@import '../../../global/Neons.scss';
+
+.burger-btn,
+.cart-btn{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.8rem;
+    color: $purple-text-color;
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.count{
+    position: absolute;
+    font-size: .8rem;
+    padding: .2rem .4rem;
+    border-radius: 30%;
+    top: 0;
+    right: 0;
+    background: $dark-purple;
+    font-weight: 700;
+}
