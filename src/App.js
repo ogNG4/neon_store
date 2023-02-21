@@ -3,6 +3,7 @@ import React,{Fragment, useState} from 'react';
 import './global/Neons.scss'
 import './App.scss';
 
+import MobileProvider from './store/MobileProvider';
 import Navbar from './components/Navbar/Navbar';
 import MobileNavbar from './components/Navbar/MobileNavbar/MobileNavbar';
 
@@ -20,10 +21,10 @@ function App() {
   
 
   return(
-    <Fragment>
+    <MobileProvider>
       { showMobileNavbar && <MobileNavbar onHideNavbar={hideMobileNavbarHandler}/>}
       <Navbar onShowNavbar={showMobileNavbarHandler} />
-    </Fragment>
+    </MobileProvider>
   )
 
 }

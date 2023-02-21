@@ -1,27 +1,14 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+
+import MobileContext from "../../store/mobile-context";
 import BurgerMenu from "./MobileNavbar/BurgerMenu";
 import DesktopNavbar from "./DesktopNavbar/DesktopNavbar";
 import CartButton from "../Cart/CartButton";
 import css from "./Navbar.module.scss";
 
 const Navbar = (props) => {
-  const [isMobile, setIsMobile] = useState(false);
+    const {isMobile} = useContext(MobileContext);
 
-  useEffect(() => {
-    const checkIfMobile = () => {
-      if (window.innerWidth <= 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkIfMobile);
-    };
-  }, []);
 
   return (
     <header className={css.header}>
@@ -36,8 +23,6 @@ const Navbar = (props) => {
             <CartButton/>
         </div>
       )}
-
-      
 
       {isMobile && (
         <div className={css.buttons}>

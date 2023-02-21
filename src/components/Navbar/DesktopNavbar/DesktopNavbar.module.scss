@@ -2,7 +2,7 @@
 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 90%;
     font-family: 'Montserrat';
 }
@@ -10,8 +10,11 @@
 .menu-item{
     text-decoration: none;
     font-size: 1.5rem;
-    color: $ligh-text-color;
     position: relative;
+    color:$purple-text-color;
+    text-shadow: $header-purple-neon;
+    text-transform: lowercase;
+    letter-spacing: 3px;
 
     &::after{
         content: "";
@@ -25,10 +28,14 @@
         color: $purple-text-color;
         box-shadow: $neon-purple;
     }
+
+ 
 }
 
+
+
 .menu-item:hover::after {
-    width: 100%;
+    width: 105%;
   }
 
 
