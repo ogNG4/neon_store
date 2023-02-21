@@ -1,22 +1,29 @@
 @import '../../global/Neons.scss';
+@import '../../global/Breakpoints.scss';
 
 .header{
     font-family: 'Sacramento';
-    width: 100%;
+    
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
     background: $background-color;
-    ;
 }
 
+.desktop-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
 .logo{
     font-size: 1.3rem;
     display: flex;
     cursor: pointer;
+
 }
 
 .buttons{
@@ -31,6 +38,17 @@
 .neon-store{
     color: $yellow-text-color;
     text-shadow: $header-yellow-neon;
+}
+
+@include media-query-768{
+    .header{
+        padding: 0 2rem;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
 }
 
 

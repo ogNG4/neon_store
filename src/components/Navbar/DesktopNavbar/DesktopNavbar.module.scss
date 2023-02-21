@@ -1,0 +1,35 @@
+@import '../../../global/Neons.scss';
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    font-family: 'Montserrat';
+}
+
+.menu-item{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $ligh-text-color;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+         bottom: -2px;
+        left: 0;
+        background-color: $ligh-text-color;
+        transition: .3s ease-in-out;
+        color: $purple-text-color;
+        box-shadow: $neon-purple;
+    }
+}
+
+.menu-item:hover::after {
+    width: 100%;
+  }
+
+
+  

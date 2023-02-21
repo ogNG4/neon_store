@@ -4,7 +4,7 @@ import css from "./MobileNavbar.module.scss";
 const MobileNavbar = (props) => {
   return (
     <Modal onClose={props.onHideNavbar}>
-      <div className={css.navbar}>
+      <nav className={css.navbar}>
         <a onClick={props.onHideNavbar} href="#/" className={css["menu-item"]}>
           About
         </a>
@@ -17,7 +17,7 @@ const MobileNavbar = (props) => {
         <a onClick={props.onHideNavbar} href="#/" className={css["menu-item"]}>
           Contact
         </a>
-      </div>
+      </nav>
     </Modal>
   );
 };
