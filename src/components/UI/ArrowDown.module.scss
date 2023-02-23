@@ -1,0 +1,11 @@
+@import '../../global/Neons.scss';
+
+.arrow-btn{
+    background: transparent;
+    border: none;
+    color: $purple-text-color;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.8rem;
+    animation: slide-down 1s ease-in-out, 1s ease-in-out infinite alternate-reverse jumping;
+}

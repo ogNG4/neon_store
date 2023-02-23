@@ -6,7 +6,7 @@ const MobileNavbar = (props) => {
     <Modal onClose={props.onHideNavbar}>
       <nav className={css.navbar}>
         <a onClick={props.onHideNavbar} href="#/" className={css["menu-item"]}>
-          About
+          Home
         </a>
         <a  onClick={props.onHideNavbar} href="#/" className={css["menu-item"]}>
           Shop

@@ -5,7 +5,7 @@ const DesktopNavbar = (props) => {
   return (
     <nav className={css.navbar}>
       <a href="#/" className={css["menu-item"]}>
-        About
+        Home
       </a>
       <a href="#/" className={css["menu-item"]}>
         Shop

@@ -16,6 +16,11 @@
     text-transform: lowercase;
     letter-spacing: 3px;
 
+    &:first-child{
+        color:$yellow-text-color;
+        text-shadow: $header-yellow-neon;
+    }
+
     &::after{
         content: "";
         position: absolute;
@@ -28,8 +33,6 @@
         color: $purple-text-color;
         box-shadow: $neon-purple;
     }
-
- 
 }
 
 
