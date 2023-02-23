@@ -106,6 +106,18 @@ $neon-yellow:   0 0 10px $light-yellow,
   }
 }
 
+@keyframes blink-blue{
+  20%,24%,55%,57%{
+      text-shadow: none;
+      color: rgb(39, 39, 39);
+  }
+
+  0%, 19%,21%,23%,25%,54%,56%,58%, 100%{
+   color: $blue-text-color;
+  text-shadow: $neon-blue;
+  }
+}
+
 
 @keyframes slide-down{
     from {

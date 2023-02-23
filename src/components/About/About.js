@@ -4,7 +4,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 import ArrowDown from "../UI/ArrowDown";
 import css from "./About.module.scss";
 
-const About = () => {
+const About = (props) => {
   return (
     <div className={css.wrapper}>
       <h1 className={css.header}>Find your neon</h1>
@@ -12,7 +12,7 @@ const About = () => {
         <div className={css.typewriter}>
           <TypeWriterEffect
             startDelay={2000}
-            cursorColor="white"
+            cursorColor="#ffff"
             multiText={[
               "Our neon shop offers a wide variety of neon signs",
               "We have neon signs for businesses, homes, and events",
@@ -26,7 +26,7 @@ const About = () => {
           />
         </div>
       </div>
-            <ArrowDown />
+          <ArrowDown onScroll={props.onScroll}/>
     </div>
   );
 };
