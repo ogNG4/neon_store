@@ -22,7 +22,7 @@ const About = () => {
               "Shop now and add some neon to your life!",
             ]}
             multiTextDelay={1000}
-            typeSpeed={30}
+            typeSpeed={50}
             textAlignment="center"
           />
         </div>
