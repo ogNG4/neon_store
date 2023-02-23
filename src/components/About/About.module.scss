@@ -1,4 +1,5 @@
 @import "../../global/Neons.scss";
+@import "../../global/Breakpoints.scss";
 
 .wrapper {
   margin-top: 5rem;
@@ -25,22 +26,42 @@
 }
 
 .typing-animation {
-  
-    display: flex;
-
-justify-content: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 30vh;
   font-family: "Roboto Mono";
   text-align: center;
   color: $blue-text-color;
   text-shadow: $neon-blue;
+  // background: blue;
 }
 
 .typewriter {
+  // background: red;
+  width: max-content;
+}
 
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-  border: none;
+@include media-query-768 {
+  .header {
+    font-size: 8rem;
+  }
+  .typewriter{
+    font-size: 2rem;
+  }
+}
+
+@include media-query-1024{
+  .wrapper{
+    gap: 8rem;
+  }
+  .header {
+    font-size: 8rem;
+  }
+  .typing-animation{
+    width: 70%;
+  }
+  .typewriter{
+    font-size: 2rem;
+  }
 }

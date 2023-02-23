@@ -11,7 +11,6 @@ const About = () => {
       <div className={css["typing-animation"]}>
         <div className={css.typewriter}>
           <TypeWriterEffect
-            widht="max-content"
             startDelay={2000}
             cursorColor="white"
             multiText={[
@@ -23,7 +22,7 @@ const About = () => {
             ]}
             multiTextDelay={1000}
             typeSpeed={50}
-            textAlignment="center"
+            
           />
         </div>
       </div>
